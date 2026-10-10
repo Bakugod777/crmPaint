@@ -1,0 +1,23 @@
+version: '3.8'
+# Solo para desarrollo local. Las contraseñas vienen de .env (ver .env.example).
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: paint-power-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina MYSQL_ROOT_PASSWORD en .env}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-paint_power_crm}
+      MYSQL_USER: ${MYSQL_USER:-ppuser}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina MYSQL_PASSWORD en .env}
+    ports:
+      - '127.0.0.1:3306:3306'
+    volumes:
+      # Se ejecutan en orden alfabético la primera vez que se crea el volumen
+      - ./sql/01_schema_base.sql:/docker-entrypoint-initdb.d/01_schema_base.sql:ro
+      - ./sql/02_contabilidad.sql:/docker-entrypoint-initdb.d/02_contabilidad.sql:ro
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+    name: paint_power_mysql_data
