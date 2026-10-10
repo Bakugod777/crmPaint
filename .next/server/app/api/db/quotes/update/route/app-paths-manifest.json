@@ -1,0 +1,3 @@
+{
+  "/api/db/quotes/update/route": "app/api/db/quotes/update/route.js"
+}

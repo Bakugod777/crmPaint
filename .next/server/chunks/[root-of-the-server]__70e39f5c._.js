@@ -1,0 +1,6 @@
+module.exports=[14747,(e,r,s)=>{r.exports=e.x("path",()=>require("path"))},62562,(e,r,s)=>{r.exports=e.x("module",()=>require("module"))},72490,e=>{"use strict";var r=e.i(62562),s=e.i(14747);let o=function(){try{return(0,r.createRequire)(s.default.join(process.cwd(),"package.json"))("./server-lib/env-check.js").envProblems(process.env)}catch(e){return[`(no se pudo cargar server-lib/env-check.js: ${e?.message||e})`]}}();o.length&&(console.error(`
+[Paint Power CRM] NO SE PUEDE INICIAR. Variables de entorno faltantes o inv\xe1lidas: ${o.join(", ")}
+Config\xfarelas en .env (ver .env.example) o en el panel del hosting y reinicie.
+`),process.exit(1)),e.A(93889).then(e=>e.ensureFirstAdmin()).catch(e=>console.error("[Paint Power CRM] admin bootstrap failed:",e?.message||e)),e.s([],72490)},93889,e=>{e.v(r=>Promise.all(["server/chunks/[root-of-the-server]__2fb8db97._.js","server/chunks/_b6a0452d._.js","server/chunks/[root-of-the-server]__a47f0368._.js"].map(r=>e.l(r))).then(()=>r(85659)))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__70e39f5c._.js.map

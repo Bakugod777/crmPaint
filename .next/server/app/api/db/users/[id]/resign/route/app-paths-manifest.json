@@ -1,0 +1,3 @@
+{
+  "/api/db/users/[id]/resign/route": "app/api/db/users/[id]/resign/route.js"
+}

@@ -1,0 +1,3 @@
+{
+  "/api/db/accounting/ledger/route": "app/api/db/accounting/ledger/route.js"
+}

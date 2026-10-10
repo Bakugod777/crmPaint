@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/payroll/layout,_N_T_/admin/payroll/page,_N_T_/admin/payroll"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/admin/payroll/__PAGE__",
+    "/admin/payroll",
+    "/admin",
+    "/_index",
+    "/_head"
+  ]
+}

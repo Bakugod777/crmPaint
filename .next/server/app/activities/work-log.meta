@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/activities/layout,_N_T_/activities/work-log/layout,_N_T_/activities/work-log/page,_N_T_/activities/work-log"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/activities/work-log/__PAGE__",
+    "/activities/work-log",
+    "/activities",
+    "/_index",
+    "/_head"
+  ]
+}

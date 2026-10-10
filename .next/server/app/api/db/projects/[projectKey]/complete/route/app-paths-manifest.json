@@ -1,0 +1,3 @@
+{
+  "/api/db/projects/[projectKey]/complete/route": "app/api/db/projects/[projectKey]/complete/route.js"
+}
